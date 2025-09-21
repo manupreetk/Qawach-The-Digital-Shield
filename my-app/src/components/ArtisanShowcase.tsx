@@ -36,7 +36,7 @@ const artisans = [
 
 export default function ArtisanShowcase() {
   return (
-    <section id="artisans" className="py-20 bg-white">
+    <section id="artisans" className="py-20 bg-white rounded-xl shadow-vintage">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-warm-brown-900 mb-4">
@@ -58,7 +58,7 @@ export default function ArtisanShowcase() {
                 />
                 {artisan.verified && (
                   <div className="absolute top-4 right-4 bg-sage-green-500 rounded-full p-2">
-                    <CheckCircle className="h-5 w-5 text-white" />
+                    <CheckCircle className="h-5 w-5 text-emerald-500 font" />
                   </div>
                 )}
               </div>
@@ -90,7 +90,7 @@ export default function ArtisanShowcase() {
                   <p className="text-sm text-warm-brown-700 mb-3">
                     <span className="font-medium">Recent work:</span> {artisan.recentWork}
                   </p>
-                  <button className="w-full px-4 py-2 bg-sage-green-600 text-white rounded-lg hover:bg-sage-green-700 transition-colors">
+                  <button className="w-full px-4 py-2 bg-sage-green-600 text-white rounded-lg hover:bg-sage-green-700 transition-all">
                     View Portfolio
                   </button>
                 </div>

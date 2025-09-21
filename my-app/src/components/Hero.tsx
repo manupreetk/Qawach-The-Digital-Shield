@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-vintage-brown mb-6 leading-tight">
-              Protecting Artisan Heritage with <span className="text-vintage-green">AI & Blockchain</span>
+              Protecting Artisan Heritage with <span className="ai-blockchain">AI & Blockchain</span>
             </h2>
             <p className="text-lg text-vintage-black mb-8 leading-relaxed">
               Every handcrafted piece tells a story. Qawach ensures that story stays with its creator, 
@@ -25,7 +25,7 @@ export default function Hero() {
           </div>
           
           <div className="relative">
-            <div className="bg-vintage-paper rounded-2xl p-8 shadow-vintage border-4 border-vintage-gold">
+            <div className="bg-vintage-paper rounded-2xl p-8 shadow-vintage">
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-vintage-green rounded-full flex items-center justify-center">
