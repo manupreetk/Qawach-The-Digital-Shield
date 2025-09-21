@@ -1,21 +1,28 @@
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background: #f3ecd4 url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  border-radius: 24px;
+  box-shadow: 0 4px 24px 0 rgba(124, 94, 60, 0.15);
+  transition: background 0.7s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.4s;
 }
 
 .logo {
   height: 6em;
   padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  will-change: filter, transform;
+  transition: filter 400ms, transform 0.7s cubic-bezier(.68,-0.55,.27,1.55);
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #b97a56aa);
+  transform: scale(1.12) rotate(-4deg);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #588da8aa);
 }
 
 @keyframes logo-spin {
@@ -35,8 +42,19 @@
 
 .card {
   padding: 2em;
+  background: #f8f5e4 url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(124, 94, 60, 0.10);
+  transition: background 0.4s, box-shadow 0.4s, transform 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+}
+.card:hover {
+  background: #125554 url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+  box-shadow: 0 8px 32px rgba(185, 122, 86, 0.18);
+  transform: scale(1.04) rotate(-2deg);
 }
 
 .read-the-docs {
-  color: #888;
+  color: #588da8;
+  font-style: italic;
+  text-shadow: 1px 1px 0 #c9b037;
 }
